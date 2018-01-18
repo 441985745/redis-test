@@ -6,12 +6,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @program: Chapter4-4-1
- * @description:
- * @author: zhangshulong
- * @create: 2018-01-18 15:47
- **/
 @Service
 @CacheConfig(cacheNames = "user")
 public class UserServiceImpl implements UserService{
