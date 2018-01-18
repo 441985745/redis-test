@@ -16,48 +16,50 @@ import java.util.Map;
 @SpringBootTest
 
 public class DemoApplicationTests {
-	@Autowired
-	private UserService userService;
+    @Autowired
+    private UserService userService;
 
-	@Autowired
-	private RuntimeService runtimeService;
-	@Autowired
-	private TaskService taskService;
-	@Test
-	public void contextLoads() {
-	}
+    @Autowired
+    private RuntimeService runtimeService;
+    @Autowired
+    private TaskService taskService;
 
-	@Test
-	public void test111(){
-		User user = new User();
+    @Test
+    public void contextLoads() {
+    }
 
-		List<User> list = userService.findAll(user);
-		for (User user2:list){
-			System.out.println(user2.getUserName());
-		}
-		System.out.println("==========================================");
-		user.setId(1);
-		user.setUserName("java1234");
-		List<User> list1 = userService.findAll(user);
-		for (User user3:list1){
-			System.out.println(user3.getUserName());
-		}
-	}
+    @Test
+    public void test111() {
+        User user = new User();
 
-	@Test
-	public void activitiStartTest(){
-		Map<String,Object> map = new HashMap<>();
-		map.put("userName","朱帅");
-		//map.put("admin","张淑龙");
-		runtimeService.startProcessInstanceByKey("study",map);
+        List<User> list = userService.findAll(user);
+        for (User user2 : list) {
+            System.out.println(user2.getUserName());
+        }
+        System.out.println("==========================================");
+        user.setId(1);
+        user.setUserName("java1234");
+        List<User> list1 = userService.findAll(user);
+        for (User user3 : list1) {
+            System.out.println(user3.getUserName());
+        }
+    }
 
-	}
-	@Test
-	public void complete(){
-		Map<String,Object> map = new HashMap<>();
-		map.put("admin","张淑龙");
-		//taskService.setAssignee("","");修改审批人
-		runtimeService.setVariable("2501","admin",map);
-		taskService.complete("2505");
-	}
+    @Test
+    public void activitiStartTest() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("userName", "朱帅");
+        //map.put("admin","张淑龙");
+        runtimeService.startProcessInstanceByKey("study", map);
+
+    }
+
+    @Test
+    public void complete() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("admin", "张淑龙");
+        //taskService.setAssignee("","");修改审批人
+        runtimeService.setVariable("2501", "admin", map);
+        taskService.complete("2505");
+    }
 }

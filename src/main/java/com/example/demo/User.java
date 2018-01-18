@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @version 1.0.0
  */
 @Data
-public class User implements Serializable{
+public class User implements Serializable {
 
     private Integer id;
 
