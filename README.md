@@ -1,2 +1,3 @@
 # redis-test
-springboot整合redis
+springboot整合redis+mybatis
+只是一个简单的样例demo,service层和dao层还有实体类并没有分开文件夹
