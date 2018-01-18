@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.UserDao">
+    <resultMap id="basemap" type="com.example.demo.User">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="userName" property="userName" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+    </resultMap>
+   <select id="findAll" resultMap="basemap">
+       select * from users
+       where 1=1
+       <if test="id != null and id !=''">
+       and    id=#{id}
+       </if>
+       <if test="userName != null and userName !=''">
+           and userName =#{userName}
+       </if>
+       <if test="password != null and password !=''">
+           and password = #{password}
+       </if>
+   </select>
+    <select id="findByName" parameterType="string" resultMap="basemap">
+        select * from users where userName=#{userName}
+    </select>
+    <insert id="save">
+        insert into users (id,userName,password) VALUES (#{id},#{userName},#{password})
+    </insert>
+</mapper>
