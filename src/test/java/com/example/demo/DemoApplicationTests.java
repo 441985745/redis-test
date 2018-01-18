@@ -13,7 +13,7 @@ import java.util.List;
 
 public class DemoApplicationTests {
 	@Autowired
-	private UserServiceImpl userService;
+	private UserService userService;
 	@Test
 	public void contextLoads() {
 	}
