@@ -1,2 +1,2 @@
 # redis-test
-springbott整合redis
+springboot整合redis
