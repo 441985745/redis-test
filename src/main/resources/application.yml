@@ -3,7 +3,7 @@ gmdc:
     expiration: 300
 
 mybatis:
-  type-aliases-package: com.example.demo
+  type-aliases-package: com.example.demo.dao
   mapper-locations: classpath*:*Mapper.xml, classpath*:/*Mapper.xml
 
 

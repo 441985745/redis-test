@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.domain.User;
+import com.example.demo.service.UserService;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
 import org.junit.Test;
