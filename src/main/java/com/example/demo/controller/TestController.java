@@ -17,7 +17,7 @@ public class TestController {
     public ModelAndView hello(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("test");
-        mv.addObject("userName","大家");
+        mv.addObject("userName","程序员");
         return mv;
     }
 }
