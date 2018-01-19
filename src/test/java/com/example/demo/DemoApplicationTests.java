@@ -31,7 +31,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void test111() {
+    public void testFindAll() {
         User user = new User();
 
         List<User> list = userService.findAll(user);
