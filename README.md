@@ -1,6 +1,6 @@
 # redis-test,activiti-test
-springboot整合redis+mybatis+activiti简单测试demo  
-此项目用来给初学者练手的demo,可以在单元测试测试样例  
+##springboot整合redis+mybatis+activiti+freemarker简单测试demo  
+###此项目用来给初学者练手的demo,可以在单元测试测试样例  
 *只是一个简单的样例demo,基本架子搭建好,用单元测试来熟悉功能  
 *数据库表对应User实体类建一个就行,很简单,一共3个字段,activiti应该会自行建表,我没试,等你们试试吧,不行的话就我就再在单元测试里写个建表sql  
 *简单的增加了打印sql语句  
