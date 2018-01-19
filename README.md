@@ -9,6 +9,7 @@
 
 
 <p>6.新增了视图层,用了freemarker模板</p>
+<p>7.多个环境配置文件application-test</p>
 
 
 
