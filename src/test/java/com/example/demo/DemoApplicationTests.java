@@ -35,6 +35,7 @@ public class DemoApplicationTests {
         User user = new User();
 
         List<User> list = userService.findAll(user);
+        List<User> list4 = userService.findAll(user);
         for (User user2 : list) {
             System.out.println(user2.getUserName());
         }

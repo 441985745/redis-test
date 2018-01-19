@@ -11,13 +11,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-@CacheConfig(cacheNames = "user")
+//@CacheConfig(cacheNames = "user")
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
     @Override
-    @Cacheable
+ //   @Cacheable
     public List<User> findAll(User user) {
         System.out.println("==================findAll=================");
         return userDao.findAll(user);
