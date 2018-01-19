@@ -13,7 +13,8 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-
+    #整合连接池
+    type: com.alibaba.druid.pool.DruidDataSource
     redis:
         database: 0
         password:

@@ -59,6 +59,13 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- 数据库连接池-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.26</version>
+
+		</dependency>
 		<!-- 单元测试-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
