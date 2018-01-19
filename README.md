@@ -8,6 +8,8 @@
 <p>5.集成了activiti,画流程图和部署流程图,需要用activiti-explorer.war(将次war包放入tomcat启动运行,网上有教程,自行百度即可),部署成功的流程图可以在单元测试中测试,activiti的几种service直接在项目中用注入即可<p>
 
 
-最后的最后,有什么情况请一定和我交流,共同进步!!!期待您的fork
+<p>6.新增了视图层,用了freemarker模板</p>
 
-<p>新增了视图层,用了freemarker模板</p>
+
+
+最后的最后,有什么情况请一定和我交流,共同进步!!!期待您的fork
