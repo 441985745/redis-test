@@ -1,8 +1,8 @@
-#redis-test,activiti-test
+# redis-test,activiti-test
 
-##springboot整合redis+mybatis+activiti+freemarker简单测试demo  
+## springboot整合redis+mybatis+activiti+freemarker简单测试demo  
 
-###此项目用来给初学者练手的demo,可以在单元测试测试样例  
+### 此项目用来给初学者练手的demo,可以在单元测试测试样例  
 
 *只是一个简单的样例demo,基本架子搭建好,用单元测试来熟悉功能  
 
